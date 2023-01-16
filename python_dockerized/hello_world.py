@@ -1,0 +1,1 @@
+print("Hello world! This is your first python script running in docker container using compose")
