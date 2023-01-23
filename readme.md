@@ -87,7 +87,7 @@ mylogger = logging.getLogger("tst")
 assert mylogger.level == logging.NOTSET               # new logger has NOTSET level
 assert mylogger.getEffectiveLevel() == logging.WARN   # and its effective level is the root logger level, i.e. WARN
 
-# attach a console handler to toto_logger
+# Attach a console handler to toto_logger
 console_handler = logging.StreamHandler()
 mylogger.addHandler(console_handler)
 mylogger.debug("debug")                 # nothing is displayed as the log level DEBUG is smaller than toto effective level
