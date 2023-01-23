@@ -1,0 +1,4 @@
+Why Grafana Loki?
+There are several log management solutions that exist. Most of them have free to pay schema but only to a certain limit, from 100 MB to 100 GB. Grafana Loki is an open-source solution. Hence, it’s free without any limitation.
+
+Another popular open-source solution is ELK (Elasticsearch, Logstash, and Kibana) stack. In order to run it, we need JVM which inevitably requires a lot of resources to run. On the Elastic documentation, it says a machine with less than 8 GB memory tends to be counterproductive.

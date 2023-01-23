@@ -1,0 +1,22 @@
+server:
+  http_listen_port: 9080
+  grpc_listen_port: 0
+
+positions:
+  filename: /tmp/positions.yaml
+
+clients:
+  # - url: http://192.168.16.1:3100/loki/api/v1/push
+  - url: http://loki:3100/loki/api/v1/push
+  # - url: http://localhost:3100/loki/api/v1/push
+scrape_configs:
+- job_name: system
+  pipeline_stages:
+  static_configs:
+  - targets:
+      - localhost
+    labels:
+      job: varlogs
+      host: ward_workstation
+      agent: promtail
+      __path__: /var/log/*log
