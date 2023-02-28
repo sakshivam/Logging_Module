@@ -1,4 +1,18 @@
-Python Logging:
+## Logging
+Logging is the process of writing information about various events that happened in operating system, software, or in communication into log files. 
+
+## Purpose of logging
+Logging is done to do these tasks:
+
+1. Information gathering
+2. Troubleshooting
+3. Generating statistics
+4. Auditing
+5. Profiling
+
+Logging is not limited to identifying errors in software development. It is also used in detecting security incidents, monitoring policy violations, providing information in case of problems, finding application bottlenecks, or generating usage data.
+
+## Python Logging:
 
 The Python standard library comes with a logging module that provides most of the basic logging 
 features. By setting it up correctly, a log message can bring a lot of useful information about 

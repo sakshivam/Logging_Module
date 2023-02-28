@@ -1,0 +1,31 @@
+version: 1
+
+formatters:
+  simple:
+    format: "%(levelname)-8s %(asctime)s \t %(filename)s @function %(funcName)s line %(lineno)s - %(message)s"
+  extended:
+    format: "%(levelname)s %(asctime)s \t L%(lineno)s - %(message)s"
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: ERROR
+    formatter: simple
+    stream: ext://sys.stdout
+
+  file_handler:
+    class: logging.FileHandler
+    level: INFO
+    filename: ./test.log
+    formatter: extended
+    # propagate: no
+
+loggers:
+  dev:
+    handlers: [console]
+    level: INFO
+  test:
+    handlers: [file_handler]
+    propagate: no
+root:
+  handlers: [file_handler]

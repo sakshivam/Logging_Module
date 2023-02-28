@@ -1,0 +1,4 @@
+INFO 2023-02-28 13:13:57,992 	 L16 - some message
+WARNING 2023-02-28 13:13:57,992 	 L17 - Warning, the program may not function properly
+ERROR 2023-02-28 13:13:57,992 	 L18 - something went wrong
+CRITICAL 2023-02-28 13:13:57,997 	 L19 - The program crashed
